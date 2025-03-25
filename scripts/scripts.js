@@ -127,6 +127,7 @@ function renderExtensions(data) {
         // Insertamos los datos
         clone.dataset.id = extension.id;
         clone.querySelector(".extension-image").src = extension.logo;
+        clone.querySelector(".extension-image").alt = extension.name;
         clone.querySelector(".extension-image").width = "60";
         clone.querySelector(".extension-image").height = "60";
         clone.querySelector(".extension-name").textContent = extension.name;
