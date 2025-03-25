@@ -176,7 +176,7 @@ function toggleTheme() {
     // Cambiamos el icono y el logo según el tema
     ["logo", "icon-theme"].forEach((id) => {
         const element = document.getElementById(id);
-        element.src = `../assets/images/${id}-${newTheme}.svg`;
+        element.src = `assets/images/${id}-${newTheme}.svg`;
     });
 
     localStorage.setItem("theme", htmlTag.dataset.theme);
